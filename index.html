@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <!-- 引入css 初始化的css 文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入公共样式的css 文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入car css -->
+    <link rel="stylesheet" href="css/car.css">
+    <!-- 先引入jquery  -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 在引入我们自己的js文件 -->
+    <script src="js/car.js"></script>
+</head>
+
+<body>
+    </div>
+    <div class="c-container">
+        <div class="w">
+            <!-- 购物车主要核心区域 -->
+            <div class="cart-warp">
+                <!-- 头部全选模块 -->
+                <div class="cart-thead">
+                    <div class="t-checkbox">
+                        <input type="checkbox" name="" id="" class="checkall"> 全选
+                    </div>
+                    <div class="t-goods">商品</div>
+                    <div class="t-price">单价</div>
+                    <div class="t-num">数量</div>
+                    <div class="t-sum">小计</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <!-- 商品详细模块 -->
+                <div class="cart-item-list">
+                    <div class="cart-item check-cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" checked class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.1a93e60af897fa6b531a3be2d750cada?rik=QgJlbTH6bQ3wBg&riu=http%3a%2f%2fimg1.cfw.cn%2fimages%2fnews_images%2ftitle_images%2f2020%2f10%2f10%2f20201010155850075.jpg&ehk=y9aFmVYApR%2b1p%2b9GIeSEiWxIRka00XtDdMc9A%2bb2Ex0%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="" width="100px">
+                            </div>
+                            <div class="p-msg">【新中式改良汉服旗袍连衣群】国风立领盘扣刺绣微透...</div>
+                        </div>
+                        <div class="p-price">￥198</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥198</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.0dedcb71f2794349dfc414bd203b06b1?rik=z7gzHVMUyvjKYw&riu=http%3a%2f%2fwww.cdhyart.com%2fuploadfile%2f2020%2f0109%2f20200109044501163.jpg&ehk=xet7BzyoL3acE1zzh8x2sQCVchPGzl5V1Tw1qu3Dz4o%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="" width="100px">
+                            </div>
+                            <div class="p-msg">【新中式改良汉服旗袍连衣群】国风立领盘扣刺绣微透...</div>
+                        </div>
+                        <div class="p-price">￥196.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥196.80</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.94efa13b32a8fd4abc2638e9e35bd4e3?rik=szoy56BCE2vAdg&riu=http%3a%2f%2fwww.cdhyart.com%2fuploadfile%2f2020%2f0109%2f20200109044540176.jpg&ehk=wBoXlcyAeZ3CnSeMVUl%2fksDf%2f73gRbyZ5lV8GMQ8giY%3d&risl=&pid=ImgRaw&r=0"
+                                    alt="" width="100px">
+                            </div>
+                            <div class="p-msg">【新中式改良汉服旗袍连衣群】国风立领盘扣刺绣微透...</div>
+                        </div>
+                        <div class="p-price">￥189</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥189</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+                </div>
+
+                <!-- 结算 -->
+                <div class="cart-floatbar">
+                    <div class="select-all">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+                    <div class="operation">
+                        <a href="javascript:;" class="remove-batch"> 删除选中的商品</a>
+                        <a href="javascript:;" class="clear-all">清理购物车</a>
+                    </div>
+                    <div class="toolbar-right">
+                        <div class="amount-sum">已经选<em>1</em>件商品</div>
+                        <div class="price-sum">总价： <em>￥583.80</em></div>
+                        <div class="btn-area">去结算</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    // 获取当前页面的标签元素
+    var favicon = document.querySelector("link[rel='icon']") || document.querySelector("link[rel='shortcut icon']");
+
+    // 创建一个空的图标
+    var emptyFavicon = document.createElement("link");
+    emptyFavicon.rel = "icon";
+    emptyFavicon.href = "data:image/x-icon;,";
+    emptyFavicon.type = "image/x-icon";
+
+    // 将空图标替换现有图标
+    document.head.appendChild(emptyFavicon);
+
+    // 移除原始图标
+    if (favicon) {
+        favicon.remove();
+    }
+</script>
+
+</html>
